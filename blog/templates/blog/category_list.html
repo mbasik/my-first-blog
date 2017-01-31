@@ -1,0 +1,30 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Django Girls blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+                   <div class="category">
+                   		<div class="culture">
+                   		<a href="{% url 'post_list' %}" class="more" >
+                   		<h1>Kultura i tradycje</h1></a>
+
+                   		</div>
+                   		
+                   		<div class="places">
+                        <a href="{% url 'place_list' %}" class="more" >Check</a>
+                   		</div>
+                   		
+                   		<div class="language">
+                   		</div>
+                   		
+                   		<div class="author">
+                   		</div>
+                </div>
+        
+
+    </body>
+</html>

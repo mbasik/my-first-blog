@@ -1,0 +1,14 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+nsdn,sandlm
+	{% for places in place %}
+        <div class="post">
+            <h1><a href="{% url 'place_detail' pk=place.pk %}">{{ places.name }}</a></h1>
+            <p>{{ places.text|linebreaksbr }}</p>
+       	</div>
+    {% empty %}
+            <p> Ta strona nie zawiera jeszcze miejsc </p>
+    {% endfor %}
+
+{% endblock %}

@@ -1,12 +1,16 @@
+body{
+    background-image: url('images/flag.jpg');
+    background-attachment: fixed;
+    background-size: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+}
 h1 a {
     color: #FCA205;
-    font-family: 'Lobster';
-}
-body {
-    padding-left: 15px;
+    font-family: 'Lato';
 }
 .page-header {
-    background-color: #ff9400;
+    background-color: Gold;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
@@ -22,7 +26,7 @@ body {
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Lobster', cursive;
+    font-family: 'Lato', cursive;
 }
 
 .date {
@@ -50,4 +54,67 @@ h1, h2, h3, h4 {
 
 .post h1 a, .post h1 a:visited {
     color: #000000;
+}
+.category{
+    position: relative;
+    width: 1000px;
+    height: 600px;
+    opacity: 0.8;
+    margin-left: 100px;
+    margin-right: 300px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 150px;
+    padding-top: 10px;
+}
+.culture{
+    position: absolute;
+    background-color: gold;
+    width: 300px;
+    height: 300px;
+}
+.culture:hover{
+    background-image: url('images/kogut.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-decoration: none;
+}
+.more{
+    padding-top: 100px;
+    font-family: 'Lato';
+    color: white;
+    text-decoration: none;
+    text-align: right;
+}
+.more:hover{
+    text-decoration: none;
+    font-weight: bold;
+}
+.places{
+    position: absolute;
+    background-color: gold;
+    width: 300px;
+    height: 300px;
+    left:500px;
+}
+.language{
+    position: absolute;
+    background-color: gold;
+    width: 300px;
+    height: 300px;
+    top: 330px;
+}
+.author{
+    position: absolute;
+    background-color: gold;
+    width: 300px;
+    height: 300px;
+    left:500px;
+    top:330px;
+}
+.post{
+    color: black;
+    background-color: rgba(255, 215, 0, 0.6);
 }
